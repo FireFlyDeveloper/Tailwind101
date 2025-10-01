@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@theme {
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+.things_i_want_to_do_child {
+    @apply flex justify-center items-center bg-red-100 rounded-xl shadow-lg p-2 col-span-2;
+}
+
+.things_i_want_to_do_child_text {
+    @apply lowercase text-sm/6 font-poppins text-center;
+}
+
+.info_card_header {
+    @apply font-poppins text-sm/6 font-medium tracking-wide underline decoration-solid decoration-red-500 decoration-2 underline-offset-5;
+}
+
+.shields_container {
+    @apply flex flex-wrap gap-2 pt-2 row-start-2;
+}
+
+.about_me_text {
+    @apply lowercase text-sm/6 font-poppins text-justify tracking-wide;
+}
+
+.containers {
+    @apply p-10 pt-0;
+}
